@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   end
   resources :doses, only: [ :new, :create, :destroy ]
 
+  root to: "cocktails#index"
+
   # resources :cocktails
   # resources :doses
 
